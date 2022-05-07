@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: left;
+  margin: 20px auto;
 }
 
 .App-logo {
@@ -36,3 +37,39 @@
     transform: rotate(360deg);
   }
 }
+.input_fields {
+  padding: 10px;
+}
+label {
+  padding-right: 10px;
+}
+input {
+  width: 35%;
+}
+.letter-head {
+  background: url('./letter-head.jpeg');
+  width: 210mm;
+  height: 297mm;
+  background-size: 100%;
+  margin: 0px auto;
+}
+.patient-data-head {
+  position: relative;
+  top: 210px;
+  left: 108px;
+  font-weight: bold;
+}
+.age {
+  margin-left: 24px;
+}
+.header-2-data {
+  margin-top: 13px !important;
+}
+.second-row {
+    margin-left: -40px;
+}
+.second-column {
+  margin-left: 24px;
+}
+
+
