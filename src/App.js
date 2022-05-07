@@ -3,6 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import LetterHead from './letterHead';
+import ReactToPrint from 'react-to-print';
 
 class App extends React.Component {
   constructor(props) {
@@ -164,8 +165,16 @@ class App extends React.Component {
           </div>
         )}
         {this.state.letterHeadTab && (
-          <LetterHead patientHistory={this.state.patientHistory}/>
+          <LetterHead patientHistory={this.state.patientHistory} ref={el => (this.componentRef = el)}/>
         )}
+        <ReactToPrint
+          trigger={() => {
+            // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop
+            // to the root node of the returned component as it will be overwritten.
+            return <a href="#">Print this out!</a>;
+          }}
+          content={() => this.componentRef}
+        />
       </>
     )
   }

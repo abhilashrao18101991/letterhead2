@@ -71,5 +71,27 @@ input {
 .second-column {
   margin-left: 24px;
 }
-
-
+.present-complaints {
+  width: 550px;
+  height: 115px;
+}
+.right-side-data {
+  left: 108px;
+  position: relative;
+  top: 145px;
+}
+.past-history {
+  margin-top: 30px;
+  width: 550px;
+  height: 115px;
+}
+.findings {
+  margin-top: 35px;
+  width: 550px;
+  height: 115px;
+}
+.provisional {
+  margin-top: 35px;
+  width: 550px;
+  height: 115px;
+}

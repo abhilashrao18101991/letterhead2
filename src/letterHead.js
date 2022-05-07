@@ -51,6 +51,22 @@ class LetterHead extends React.Component {
                         </div>
 
                     </div>
+                    <div className="right-side-data">
+                        <div className="present-complaints">
+                            {patientInfo.presentComplaints}
+                        </div>
+                        <div className="past-history">
+                            {patientInfo.pastHistory}
+                        </div>
+                        <div className="findings">
+                            {patientInfo.findings}
+                        </div>
+                        <div className="provisional">
+                            {patientInfo.provDiagnosis}
+                        </div>
+
+                    </div>
+
 
                 </div>
             </div>
