@@ -52,10 +52,10 @@ input {
 }
 
 .letter-head {
-  background: url('./letter-head.jpg');
+  /* background: url('./letter-head.jpg'); */
   width: 210mm;
   height: 297mm;
-  background-size: 100%;
+  /* background-size: 100%; */
   margin: 0px auto;
 }
 
@@ -124,10 +124,10 @@ input {
 }
 
 .letter-head-back {
-  background: url('./letter-head-backside.jpg');
+  /* background: url('./letter-head-backside.jpg'); */
   width: 210mm;
   height: 297mm;
-  background-size: 100%;
+  /* background-size: 100%; */
   margin: 0px auto;
 }
 
