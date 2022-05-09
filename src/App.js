@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import LetterHead from './letterHead';
 import ReactToPrint from 'react-to-print';
+import SecondPage from './secondPage';
 
 class App extends React.Component {
   constructor(props) {
@@ -23,8 +24,8 @@ class App extends React.Component {
       findings: "",
       provDiagnosis: "",
       doctorTab: true,
-      letterHeadTab: false,
-      patientHistory: ""
+      patientHistory: "",
+      medicinePageTab: false
     }
   }
   onChangeInput = (e) => {
@@ -48,7 +49,7 @@ class App extends React.Component {
       findings: state.findings,
       provDiagnosis: state.provDiagnosis,
     }
-    this.setState({ patientHistory: userData, doctorTab: false, letterHeadTab: true });
+    this.setState({ patientHistory: userData, doctorTab: false, medicinePageTab: true });
   }
   render() {
     return (
@@ -73,10 +74,15 @@ class App extends React.Component {
             </div>
             <div className="input_fields row">
               <div className="col-4">
-                <label>Sex:</label>
+                <label className='sex'>
+                  Sex:
+                </label>
               </div>
-              <div className="col-8">
-                <input type="text" name="sex" value={this.state.sex} onChange={this.onChangeInput} />
+              <div className="col-3">
+                <input type="radio" className="radioButton" name="sex" value="M" onChange={(e) => this.onChangeInput(e)}></input>
+                <label className=""><i className="fas fa-male"></i></label>
+                <input type="radio" className="radioButton" name="sex" value="F" onChange={(e) => this.onChangeInput(e)}></input>
+                <label className=""><i className="fas fa-female"></i></label>
               </div>
             </div>
             <div className="input_fields row">
@@ -116,7 +122,7 @@ class App extends React.Component {
                 <label>Time:</label>
               </div>
               <div className="col-8">
-                <input type="text" name="time" value={this.state.time} onChange={this.onChangeInput} />
+                <input type="time" name="time" value={this.state.time} onChange={this.onChangeInput} />
               </div>
             </div>
             <div className="input_fields row">
@@ -160,21 +166,13 @@ class App extends React.Component {
               </div>
             </div>
             <div className="row">
-              <button onClick={this.handleSubmit}>Send Details</button>
+              <button onClick={this.handleSubmit}>Next</button>
             </div>
           </div>
         )}
-        {this.state.letterHeadTab && (
-          <LetterHead patientHistory={this.state.patientHistory} ref={el => (this.componentRef = el)}/>
+        {this.state.medicinePageTab && (
+          <SecondPage patientHistory={this.state.patientHistory} />
         )}
-        <ReactToPrint
-          trigger={() => {
-            // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop
-            // to the root node of the returned component as it will be overwritten.
-            return <a href="#">Print this out!</a>;
-          }}
-          content={() => this.componentRef}
-        />
       </>
     )
   }

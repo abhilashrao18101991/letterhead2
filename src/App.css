@@ -33,65 +33,141 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 .input_fields {
   padding: 10px;
 }
+
 label {
   padding-right: 10px;
 }
+
 input {
   width: 35%;
 }
+
 .letter-head {
-  background: url('./letter-head.jpeg');
+  /* background: url('./letter-head.jpg'); */
   width: 210mm;
   height: 297mm;
-  background-size: 100%;
+  /* background-size: 100%; */
   margin: 0px auto;
 }
+
 .patient-data-head {
   position: relative;
-  top: 210px;
-  left: 108px;
+  top: 230px;
+  left: 80px;
   font-weight: bold;
 }
+
 .age {
   margin-left: 24px;
 }
+
 .header-2-data {
   margin-top: 13px !important;
 }
+
 .second-row {
-    margin-left: -40px;
+  margin-left: -40px;
 }
+
 .second-column {
   margin-left: 24px;
 }
+
 .present-complaints {
   width: 550px;
   height: 115px;
 }
+
 .right-side-data {
-  left: 108px;
+  left: 95px;
   position: relative;
-  top: 145px;
+  top: 200px;
 }
+
 .past-history {
   margin-top: 30px;
   width: 550px;
   height: 115px;
 }
+
 .findings {
   margin-top: 35px;
   width: 550px;
   height: 115px;
 }
+
 .provisional {
   margin-top: 35px;
   width: 550px;
   height: 115px;
+}
+
+.fa-female {
+  color: green;
+}
+
+.fa-male {
+  color: red;
+}
+
+.form-check-input {
+  margin-right: 10px;
+}
+
+.letter-head-back {
+  background: url('./letter-head-backside.jpg');
+  width: 210mm;
+  height: 297mm;
+  background-size: 100%;
+  margin: 0px auto;
+}
+
+.medicine-data-head {
+  position: relative;
+  top: 220px;
+  left: 110px;
+  font-weight: bold;
+}
+
+.check-mark {
+  margin-left: -15px;
+}
+
+.col-1.check-mark {
+  flex: 0 0 auto;
+  width: 6.5%;
+}
+
+.medicine {
+  margin-top: 15px !important;
+  height: 25px;
+}
+
+.med1 {
+  height: 25px;
+}
+
+.diet {
+  margin-top: 23px !important;
+  height: 50px;
+  margin-left: 16px !important;
+}
+.investigations {
+  margin-top: 20px !important;
+  margin-left: -30px !important;
+  height: 290px;
+}
+.review {
+  margin-top: 20px !important;
+  margin-left: -30px !important;
+  height: 90px;
 }

@@ -2,7 +2,6 @@ import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import letter from './letter-head.jpeg';
 
 class LetterHead extends React.Component {
     constructor(props) {
@@ -12,62 +11,59 @@ class LetterHead extends React.Component {
         }
     }
     componentDidMount() {
-        this.setState({ patientData: this.props.patientHistory });
+        this.setState({ patientData: this.props.medicinesHistory ? this.props.medicinesHistory : {} });
     }
     render() {
-        const patientInfo = this.state.patientData;
+        const patientInfo = this.state.patientData ? this.state.patientData.patientHistory : "" ;
         return (
             <div className="letter-head">
                 <div className="patient-data-head">
                     <div className="row">
                         <div className="col-5">
-                            {patientInfo.patientName}
+                            {patientInfo ? patientInfo.patientName : ""}
                         </div>
                         <div className="col-1 age">
-                            {patientInfo.age}
+                            {patientInfo ? patientInfo.age : ""}
                         </div>
                         <div className="col-1 age">
-                            {patientInfo.sex}
+                            {patientInfo ? patientInfo.sex : ""}
                         </div>
                         <div className="col-1">
-                            {patientInfo.co}
+                            {patientInfo ? patientInfo.co : ""}
                         </div>
                     </div>
                     <div className="row header-2-data">
                         <div className="col-2">
-                            {patientInfo.weight}
+                            {patientInfo ? patientInfo.weight : ""}
                         </div>
                         <div className="col-2 second-row">
-                            {patientInfo.bp}
+                            {patientInfo ? patientInfo.bp : ""}
                         </div>
                         <div className="col-2">
-                            {patientInfo.temp}
+                            {patientInfo ? patientInfo.temp : ""}
                         </div>
                         <div className="col-2">
-                            {patientInfo.time}
+                            {patientInfo ? patientInfo.time : ""}
                         </div>
                         <div className="col-2 second-column">
-                            {patientInfo.date}
+                            {patientInfo ? patientInfo.date : ""}
                         </div>
 
                     </div>
                     <div className="right-side-data">
                         <div className="present-complaints">
-                            {patientInfo.presentComplaints}
+                            {patientInfo ? patientInfo.presentComplaints : ""}
                         </div>
                         <div className="past-history">
-                            {patientInfo.pastHistory}
+                            {patientInfo ? patientInfo.pastHistory : ""}
                         </div>
                         <div className="findings">
-                            {patientInfo.findings}
+                            {patientInfo ? patientInfo.findings : ""}
                         </div>
                         <div className="provisional">
-                            {patientInfo.provDiagnosis}
+                            {patientInfo ? patientInfo.provDiagnosis : ""}
                         </div>
-
                     </div>
-
-
                 </div>
             </div>
         )
