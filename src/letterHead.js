@@ -14,7 +14,7 @@ class LetterHead extends React.Component {
         this.setState({ patientData: this.props.medicinesHistory ? this.props.medicinesHistory : {} });
     }
     render() {
-        const patientInfo = this.state.patientData ? this.state.patientData.patientHistory : "" ;
+        const patientInfo = this.state.patientData ? this.state.patientData.patientHistory : "";
         return (
             <div className="letter-head">
                 <div className="patient-data-head">
@@ -49,6 +49,31 @@ class LetterHead extends React.Component {
                             {patientInfo ? patientInfo.date : ""}
                         </div>
 
+                    </div>
+                    <div className="checkbox-area">
+                        <div className="row">
+                            <div className="col-1">
+                                {patientInfo.isHtn === true ? <i className="fas fa-check"></i> : ""}
+                            </div>
+                            <div className="col-1">
+                                {patientInfo.isDm === true ? <i className="fas fa-check"></i> : ""}
+                            </div>
+                            <div className="col-1">
+                                {patientInfo.isBa === true ? <i className="fas fa-check"></i> : ""}
+                            </div>
+                            <div className="col-1">
+                                {patientInfo.isCad === true ? <i className="fas fa-check"></i> : ""}
+                            </div>
+                            <div className="col-1">
+                                {patientInfo.isCkd === true ? <i className="fas fa-check"></i> : ""}
+                            </div>
+                            <div className="col-2">
+                                {patientInfo.isThyroid === true ? <i className="fas fa-check"></i> : ""}
+                            </div>
+                            <div className="col-2">
+                                {patientInfo.isDrug === true ? <i className="fas fa-check"></i> : ""}
+                            </div>
+                        </div>
                     </div>
                     <div className="right-side-data">
                         <div className="present-complaints">

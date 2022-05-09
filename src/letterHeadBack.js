@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import moment from 'moment';
 
 class LetterHeadBack extends React.Component {
     constructor(props) {
@@ -15,6 +16,8 @@ class LetterHeadBack extends React.Component {
     }
     render() {
         const medicinesInfo = this.state.medicinesData;
+        const date = moment(new Date()).format('DD/MM/YYYY');
+        const time = moment(new Date()).format('h:mm a');
         return (
             <div className="letter-head-back">
                 <div className="medicine-data-head">
@@ -202,6 +205,8 @@ class LetterHeadBack extends React.Component {
                             {medicinesInfo.review}
                         </div>
                         <div className="col-5">
+                            <div className="date">{date}</div>
+                            <div className="date">{time}</div>
                         </div>
                     </div>
                 </div>

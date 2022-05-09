@@ -2,9 +2,8 @@ import './App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import LetterHead from './letterHead';
-import ReactToPrint from 'react-to-print';
 import SecondPage from './secondPage';
+import moment from 'moment';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,13 +24,56 @@ class App extends React.Component {
       provDiagnosis: "",
       doctorTab: true,
       patientHistory: "",
-      medicinePageTab: false
+      medicinePageTab: false,
+      isHtn: false,
+      isDm: false,
+      isBa: false,
+      isCad: false,
+      isCkd: false,
+      isThyroid: false,
+      isDrug: false
     }
   }
   onChangeInput = (e) => {
     const { name, value } = e.target
     this.setState({ [name]: value });
   }
+  onChangeHtn = () => {
+    this.setState(initialState => ({
+      isHtn: !initialState.isHtn,
+    }));
+  }
+  onChangeDm = () => {
+    this.setState(initialState => ({
+      isDm: !initialState.isDm,
+    }));
+  }
+  onChangeBa = () => {
+    this.setState(initialState => ({
+      isBa: !initialState.isBa,
+    }));
+  }
+  onChangeCad = () => {
+    this.setState(initialState => ({
+      isCad: !initialState.isCad,
+    }));
+  }
+  onChangeCkd = () => {
+    this.setState(initialState => ({
+      isCkd: !initialState.isCkd,
+    }));
+  }
+  onChangeThyroid = () => {
+    this.setState(initialState => ({
+      isThyroid: !initialState.isThyroid,
+    }));
+  }
+  onChangeDrug = () => {
+    this.setState(initialState => ({
+      isDrug: !initialState.isDrug,
+    }));
+  }
+
   handleSubmit = () => {
     const state = this.state;
     const userData = {
@@ -48,10 +90,18 @@ class App extends React.Component {
       pastHistory: state.pastHistory,
       findings: state.findings,
       provDiagnosis: state.provDiagnosis,
+      isHtn: state.isHtn,
+      isDm: state.isDm,
+      isBa: state.isBa,
+      isCad: state.isCad,
+      isCkd: state.isCkd,
+      isThyroid: state.isThyroid,
+      isDrug: state.isDrug
     }
     this.setState({ patientHistory: userData, doctorTab: false, medicinePageTab: true });
   }
   render() {
+    const date = moment(new Date()).format('YYYY-MM-DD');
     return (
       <>
         {this.state.doctorTab && (
@@ -130,7 +180,7 @@ class App extends React.Component {
                 <label>Date:</label>
               </div>
               <div className="col-8">
-                <input type="date" name="date" value={this.state.date} onChange={this.onChangeInput} />
+                <input type="date" name="date" value={this.state.date} onChange={this.onChangeInput} min={date} />
               </div>
             </div>
             <div className="input_fields row">
@@ -163,6 +213,78 @@ class App extends React.Component {
               </div>
               <div className="col-8">
                 <textarea name="provDiagnosis" value={this.state.provDiagnosis} onChange={this.onChangeInput} rows="5" cols="35" />
+              </div>
+            </div>
+            <div className="input_fields row">
+              <div className="col-1">
+                <label className="form-check-label">
+                  <input type="checkbox"
+                    checked={this.state.isHtn}
+                    onChange={this.onChangeHtn}
+                    className="form-check-input pr-2"
+                  />
+                  HTN
+                </label>
+              </div>
+              <div className="col-1">
+                <label className="form-check-label">
+                  <input type="checkbox"
+                    checked={this.state.isDm}
+                    onChange={this.onChangeDm}
+                    className="form-check-input pr-2"
+                  />
+                  DM
+                </label>
+              </div>
+              <div className="col-1">
+                <label className="form-check-label">
+                  <input type="checkbox"
+                    checked={this.state.isBa}
+                    onChange={this.onChangeBa}
+                    className="form-check-input pr-2"
+                  />
+                  BA
+                </label>
+              </div>
+              <div className="col-1">
+                <label className="form-check-label">
+                  <input type="checkbox"
+                    checked={this.state.isCad}
+                    onChange={this.onChangeCad}
+                    className="form-check-input pr-2"
+                  />
+                  CAD
+                </label>
+              </div>
+              <div className="col-1">
+                <label className="form-check-label">
+                  <input type="checkbox"
+                    checked={this.state.isCkd}
+                    onChange={this.onChangeCkd}
+                    className="form-check-input pr-2"
+                  />
+                  CKD
+                </label>
+              </div>
+              <div className="col-3">
+                <label className="form-check-label">
+                  <input type="checkbox"
+                    checked={this.state.isThyroid}
+                    onChange={this.onChangeThyroid}
+                    className="form-check-input pr-2"
+                  />
+                  THYROID DISAORDER
+                </label>
+              </div>
+              <div className="col-3">
+                <label className="form-check-label">
+                  <input type="checkbox"
+                    checked={this.state.isDrug}
+                    onChange={this.onChangeDrug}
+                    className="form-check-input pr-2"
+                  />
+                  DRUG ALLERGIES
+                </label>
               </div>
             </div>
             <div className="row">
