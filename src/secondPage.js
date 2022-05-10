@@ -473,11 +473,6 @@ class SecondPage extends React.Component {
                         <div className="input_fields row">
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isMorning1}
-                                        onChange={this.onChangeMorning1}
-                                        className="form-check-input pr-2"
-                                    />
                                     Morning
                                 </label>
                                 <div className="row">
@@ -505,11 +500,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isAfternoon1}
-                                        onChange={this.onChangeAfternoon1}
-                                        className="form-check-input pr-2"
-                                    />
                                     Afternoon
                                 </label>
                                 <div className="row">
@@ -537,11 +527,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isNight1}
-                                        onChange={this.onChangeNight1}
-                                        className="form-check-input pr-2"
-                                    />
                                     Night
                                 </label>
                                 <div className="row">
@@ -587,11 +572,6 @@ class SecondPage extends React.Component {
                         <div className="input_fields row">
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isMorning2}
-                                        onChange={this.onChangeMorning2}
-                                        className="form-check-input pr-2"
-                                    />
                                     Morning
                                 </label>
                                 <div className="row">
@@ -619,11 +599,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isAfternoon2}
-                                        onChange={this.onChangeAfternoon2}
-                                        className="form-check-input pr-2"
-                                    />
                                     Afternoon
                                 </label>
                                 <div className="row">
@@ -651,11 +626,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isNight2}
-                                        onChange={this.onChangeNight2}
-                                        className="form-check-input pr-2"
-                                    />
                                     Night
                                 </label>
                                 <div className="row">
@@ -701,11 +671,6 @@ class SecondPage extends React.Component {
                         <div className="input_fields row">
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isMorning3}
-                                        onChange={this.onChangeMorning3}
-                                        className="form-check-input pr-2"
-                                    />
                                     Morning
                                 </label>
                                 <div className="row">
@@ -733,11 +698,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isAfternoon3}
-                                        onChange={this.onChangeAfternoon3}
-                                        className="form-check-input pr-2"
-                                    />
                                     Afternoon
                                 </label>
                                 <div className="row">
@@ -765,11 +725,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isNight3}
-                                        onChange={this.onChangeNight3}
-                                        className="form-check-input pr-2"
-                                    />
                                     Night
                                 </label>
                                 <div className="row">
@@ -815,11 +770,6 @@ class SecondPage extends React.Component {
                         <div className="input_fields row">
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isMorning4}
-                                        onChange={this.onChangeMorning4}
-                                        className="form-check-input pr-2"
-                                    />
                                     Morning
                                 </label>
                                 <div className="row">
@@ -847,11 +797,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isAfternoon4}
-                                        onChange={this.onChangeAfternoon4}
-                                        className="form-check-input pr-2"
-                                    />
                                     Afternoon
                                 </label>
                                 <div className="row">
@@ -879,11 +824,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isNight4}
-                                        onChange={this.onChangeNight4}
-                                        className="form-check-input pr-2"
-                                    />
                                     Night
                                 </label>
                                 <div className="row">
@@ -930,11 +870,6 @@ class SecondPage extends React.Component {
                         <div className="input_fields row">
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isMorning5}
-                                        onChange={this.onChangeMorning5}
-                                        className="form-check-input pr-2"
-                                    />
                                     Morning
                                 </label>
                                 <div className="row">
@@ -962,11 +897,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isAfternoon5}
-                                        onChange={this.onChangeAfternoon5}
-                                        className="form-check-input pr-2"
-                                    />
                                     Afternoon
                                 </label>
                                 <div className="row">
@@ -994,11 +924,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isNight5}
-                                        onChange={this.onChangeNight5}
-                                        className="form-check-input pr-2"
-                                    />
                                     Night
                                 </label>
                                 <div className="row">
@@ -1044,11 +969,6 @@ class SecondPage extends React.Component {
                         <div className="input_fields row">
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isMorning6}
-                                        onChange={this.onChangeMorning6}
-                                        className="form-check-input pr-2"
-                                    />
                                     Morning
                                 </label>
                                 <div className="row">
@@ -1076,11 +996,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isAfternoon6}
-                                        onChange={this.onChangeAfternoon6}
-                                        className="form-check-input pr-2"
-                                    />
                                     Afternoon
                                 </label>
                                 <div className="row">
@@ -1108,11 +1023,6 @@ class SecondPage extends React.Component {
                             </div>
                             <div className="col-4">
                                 <label className="form-check-label">
-                                    <input type="checkbox"
-                                        checked={this.state.isNight6}
-                                        onChange={this.onChangeNight6}
-                                        className="form-check-input pr-2"
-                                    />
                                     Night
                                 </label>
                                 <div className="row">
