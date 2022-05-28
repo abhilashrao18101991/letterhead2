@@ -18,59 +18,59 @@ class LetterHead extends React.Component {
         return (
             <div className="letter-head">
                 <div className="patient-data-head">
-                    <div className="row">
-                        <div className="col-5">
+                    <div className="row header-sec">
+                        <div className="p-name">
                             {patientInfo ? patientInfo.patientName : ""}
                         </div>
-                        <div className="col-1 age">
+                        <div className="age-value">
                             {patientInfo ? patientInfo.age : ""}
                         </div>
-                        <div className="col-1 age">
+                        <div className="sex">
                             {patientInfo ? patientInfo.sex : ""}
                         </div>
-                        <div className="col-1">
+                        <div className="co">
                             {patientInfo ? patientInfo.co : ""}
                         </div>
                     </div>
-                    <div className="row header-2-data">
-                        <div className="col-2">
+                    <div className="row header-2-data header-sec2">
+                        <div className="weight">
                             {patientInfo ? patientInfo.weight : ""}
                         </div>
-                        <div className="col-2 second-row">
+                        <div className="bp">
                             {patientInfo ? patientInfo.bp : ""}
                         </div>
-                        <div className="col-2">
+                        <div className="bp">
                             {patientInfo ? patientInfo.temp : ""}
                         </div>
-                        <div className="col-2">
+                        <div className="time">
                             {patientInfo ? patientInfo.time : ""}
                         </div>
-                        <div className="col-2 second-column">
+                        <div className="date2">
                             {patientInfo ? patientInfo.date : ""}
                         </div>
 
                     </div>
                     <div className="checkbox-area">
                         <div className="row">
-                            <div className="col-1">
+                            <div className="htn">
                                 {patientInfo.isHtn === true ? <i className="fas fa-check"></i> : ""}
                             </div>
-                            <div className="col-1">
+                            <div className="dm">
                                 {patientInfo.isDm === true ? <i className="fas fa-check"></i> : ""}
                             </div>
-                            <div className="col-1">
+                            <div className="ba">
                                 {patientInfo.isBa === true ? <i className="fas fa-check"></i> : ""}
                             </div>
-                            <div className="col-1">
+                            <div className="cad">
                                 {patientInfo.isCad === true ? <i className="fas fa-check"></i> : ""}
                             </div>
-                            <div className="col-1">
+                            <div className="ckd">
                                 {patientInfo.isCkd === true ? <i className="fas fa-check"></i> : ""}
                             </div>
-                            <div className="col-2">
+                            <div className="thyroid">
                                 {patientInfo.isThyroid === true ? <i className="fas fa-check"></i> : ""}
                             </div>
-                            <div className="col-2">
+                            <div className="drug">
                                 {patientInfo.isDrug === true ? <i className="fas fa-check"></i> : ""}
                             </div>
                         </div>
