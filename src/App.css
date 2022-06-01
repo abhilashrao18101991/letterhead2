@@ -1,6 +1,5 @@
 .App {
   text-align: left;
-  margin: 20px auto;
 }
 
 .App-logo {
@@ -53,15 +52,14 @@ input {
 
 .letter-head {
   /* background: url('./letter-head.jpg'); */
-  width: 207mm;
-  height: 296mm;
+  width: 20.7cm;
+  height: 29.6cm;
   /* background-size: 100%; */
-  margin: 0px auto;
 }
 
 .patient-data-head {
   position: relative;
-  top: 223px;
+  top: 5.8cm;
   font-weight: bold;
 }
 
@@ -71,7 +69,7 @@ input {
 }
 
 .header-2-data {
-  margin-top: 34px !important;
+  margin-top: 1cm !important;
 }
 
 .second-row {
@@ -83,32 +81,32 @@ input {
 }
 
 .present-complaints {
-  width: 550px;
-  height: 127px;
+  width: 14.5cm;
+  height: 3.5cm;
 }
 
 .right-side-data {
-  left: 207px;
+  left: 5.5cm;
   position: relative;
-  top: 125px;
+  top: 3.2cm;
 }
 
 .past-history {
-  margin-top: 40px;
-  width: 550px;
-  height: 115px;
+  margin-top: 0.5cm;
+  width: 14.5cm;
+  height: 3.5cm;
 }
 
 .findings {
-  margin-top: 45px;
-  width: 550px;
-  height: 115px;
+  margin-top: 0.5cm;
+  width: 14.5cm;
+  height: 3.5cm;
 }
 
 .provisional {
-  margin-top: 45px;
-  width: 550px;
-  height: 165px;
+  margin-top: 0.5cm;
+  width: 14.5cm;
+  height: 5cm;
 }
 
 .fa-female {
@@ -125,10 +123,9 @@ input {
 
 .letter-head-back {
   /* background: url('./letter-head-backside.jpg'); */
-  width: 207mm;
-  height: 296mm;
+  width: 20.7cm;
+  height: 29.6cm;
   /* background-size: 100%; */
-  margin: 0px auto;
 }
 
 .medicine-data-head {
@@ -175,9 +172,9 @@ input {
 }
 
 .checkbox-area {
-  left: 245px;
+  left: 6.5cm;
   position: relative;
-  top: 37px;
+  top: 0.8cm;
 }
 
 .date {
@@ -186,71 +183,71 @@ input {
 }
 
 .p-name {
-  width: 367px !important;
+  width: 10cm !important;
 }
 
 .weight {
-  width: 106px !important;
+  width: 3cm !important;
 }
 
 .bp {
-  width: 124px !important;
+  width: 3.5cm !important;
 }
 
 .time {
-  width: 180px !important;
+  width: 4.5cm !important;
 }
 
 .date2 {
-  width: 118px !important;
+  width: 3cm !important;
 }
 
 .header-sec {
-  margin-left: 113px !important;
+  margin-left: 2.8cm !important;
 }
 
 .age-value {
-  width: 94px !important;
+  width: 2.3cm !important;
 }
 
 .sex {
-  width: 64px !important;
+  width: 1.5cm !important;
 }
 
 .co {
-  width: 130px !important;
+  width: 3cm !important;
 }
 
 .header-sec2 {
-  margin-left: 90px !important;
+  margin-left: 2.5cm !important;
 }
 
 .htn {
-  width: 68px !important;
+  width: 2cm !important;
 }
 
 .dm {
-  width: 68px !important;
+  width: 1.6cm !important;
 }
 
 .ba {
-  width: 68px !important;
+  width: 2cm !important;
 }
 
 .cad {
-  width: 71px !important;
+  width: 1.7cm !important;
 }
 
 .ckd {
-  width: 87px !important;
+  width: 2.5cm !important;
 }
 
 .thyroid {
-  width: 102px !important;
+  width: 2.7cm !important;
 }
 
 .drug {
-  width: 37px !important;
+  width: 1cm !important;
 }
 
 .medicine-name {
